@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import useAnimatedState from '../../src/index';
 import './App.css';
 
@@ -7,7 +6,14 @@ function App() {
     isVisible,
     toggle,
     ref
-  } = useAnimatedState(true);
+  } = useAnimatedState(true, {
+    visible: { opacity: 1, transform: 'scale(1)' },
+    hidden: { opacity: 0, transform: 'scale(0.5)' }
+  }, {
+    duration: 1350,
+    easing: 'ease-in-out',
+    fill: 'both'
+  });
 
   return (
     <div className="App">
