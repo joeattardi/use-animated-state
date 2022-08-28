@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 200px;
+  grid-template-columns: 200px;
+  align-items: center;
+}
+
+.box {
+  margin: 2em 0;
+  background: skyblue;
+  color: black;
+  padding: 2em;
+  font-size: 2em;
+}
